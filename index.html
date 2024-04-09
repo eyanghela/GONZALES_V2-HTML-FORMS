@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <form action="#" method="POST">
+        
+        <img src="logo.jpg" alt="Logo"><h1>CUISINE</h1>
+
+        
+        <h2>love at first bite</h2>
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+
+        <div id="dropdown">
+            <button class="dropdown-toggle">
+                <span>Menu</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Italian</a></li>
+                <li class="menu-item"><a href="#">Chinese</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Healthy Options</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                        <li class="submenu-item"><a href="#">Vegan</a></li>
+                        <li class="submenu-item"><a href="#">Gluten-Free</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Mexican</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Specials</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Canabis Infused</a></li>
+                        <li class="submenu-item"><a href="#">Exotic Meats</a></li>
+                        <li class="submenu-item"><a href="#">HUMAN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <label for="payment">Mode of Payment:</label>
+        <select id="payment" name="payment">
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+        </select>
+
+        <label for="dine-take">Dine-in / Take-out:</label>
+        <select id="dine-take" name="dine-take">
+            <option value="dine-in">Dine-in</option>
+            <option value="take-out">Take-out</option>
+        </select>
+
+
+        <label for="comments">Comments/Instruction:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+
+        <button type="submit">Order Placed</button>
+        <button type="reset">Cancel</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
